@@ -34,9 +34,12 @@ footer {
   color: white;
   margin: auto;
   padding-bottom: 10px;
-  font-size: 20px;
   position: absolute;
   bottom: 0;
+}
+
+footer p {
+  font-size: 20px;
 }
 
 html {
