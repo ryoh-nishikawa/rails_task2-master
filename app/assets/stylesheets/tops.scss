@@ -47,10 +47,10 @@ html {
   min-height: 100%;
 }
 
-body {
-  text-align: center;
+body.index-msg p {
+  text-align: left;
 }
 
-body.index-msg p {
-  float: left;
+body {
+  text-align: center;
 }
