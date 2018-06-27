@@ -13,7 +13,7 @@
 
   <div class="container">
     <div class="row">
-      <nav class="col-md-4"></nav>
+      <nav class="col-md-4">
         <ul class="blog-panel">
           <h2><%= blog.title %></h2>
           <p><%= blog.content %></p>
@@ -21,7 +21,7 @@
       </nav>
 
       <div class="blog-links">
-        <nav class="col-md-4"></nav>
+        <nav class="col-md-4">
           <%= link_to 'Show', blog %>
           <%= link_to 'Edit', edit_blog_path(blog) %> |
           <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
