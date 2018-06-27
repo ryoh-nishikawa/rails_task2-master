@@ -1,5 +1,5 @@
 <div class="index-msg">
-  <p>" TRY !! ""をクリックするだけ🎶<p>
+  <p>" TRY !! "をクリックするだけ🎶<p>
 </div>
 
 <h1>新規ブログを作成する</h1>
@@ -10,13 +10,24 @@
 
 <p>過去のブログ一覧</p>
 <% @blogs.each do |blog| %>
-  <div class="blog-panel">
-    <h2><%= blog.title %></h2>
-    <p><%= blog.content %></p>
+
+  <div class="container">
+    <div class="blog-panel">
+      <nav> class="blog_list"></nav>
+        <ul class="row">
+          <li class="col-md-4">><%= blog.title %></li>
+          <li class="col-md-4">><%= blog.content %></li>
+        </ul>
+      </nav>
+    </div>
+
     <div class="blog-links">
       <%= link_to 'Show', blog %>
       <%= link_to 'Edit', edit_blog_path(blog) %> |
       <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
     </div>
   </div>
+
+
+
 <% end %>
