@@ -15,6 +15,9 @@ div.blog_title_index p {
 ul.blog_title {
   margin-left: 300px;
   font-size: 30px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 div.blog_content_index p {
@@ -28,6 +31,9 @@ div.blog_content p{
   border-width: 2px;
   border-color: #d3d3d3;
   font-size: 30px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 ul.blog-panel {
