@@ -10,10 +10,10 @@
 <div past_blog>
   <p>過去のブログ一覧</p>
 </div>
-<% @blogs.each do |blog| %>
 
-  <div class="container">
-    <div class="row">
+<div class="container">
+  <div class="row">
+    <% @blogs.each do |blog| %>
       <nav class="col-md-6">
         <ul class="blog-panel">
           <h2><%= blog.title %></h2>
@@ -26,9 +26,6 @@
           <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
         </div>
       </nav>
-    </div>
+    <% end %>
   </div>
-
-
-
-<% end %>
+</div>
