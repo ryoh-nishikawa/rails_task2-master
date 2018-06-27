@@ -29,9 +29,9 @@
         </ul>
 
         <div class="blog-links">
-          <%= link_to 'Show', blog class:.square_btn %>
-          <%= link_to 'Edit', edit_blog_path(blog) class:.square_btn %>
-          <%= link_to 'Destroy', blog, class:.square_btn, method: :delete, data: { confirm: '本当に消していい?' } %>
+          <%= link_to 'Show', blog %>
+          <%= link_to 'Edit', edit_blog_path(blog)  %>
+          <%= link_to 'Destroy', blog, method: :delete, data: { confirm: '本当に消していい?' } %>
         </div>
       </nav>
     <% end %>
