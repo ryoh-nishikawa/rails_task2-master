@@ -16,8 +16,10 @@
     <% @blogs.each do |blog| %>
       <nav class="col-md-6">
         <ul class="blog-panel">
-          <h2><%= blog.title %></h2>
-          <p><%= blog.content %></p>
+          <h2 class="navbar-text">
+            <%= "title" blog.title %>
+          </h2>
+            <p><%= "本文" blog.content %></p>
         </ul>
 
         <div class="blog-links">
@@ -30,10 +32,12 @@
   </div>
 </div>
 
-<nav aria-label="...">
-  <ul class="pagination">
-    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-    ...
-  </ul>
-</nav>
+<div>
+  <nav aria-label="...">
+    <ul class="pagination">
+      <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+      <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+      ...
+    </ul>
+  </nav>
+</div>
