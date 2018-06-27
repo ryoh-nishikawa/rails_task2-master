@@ -16,10 +16,12 @@
     <% @blogs.each do |blog| %>
       <nav class="col-md-6">
         <ul class="blog-panel">
+          <h2>title</h2>
           <h2 class="navbar-text">
-            <%= "title" blog.title %>
+            <%= blog.title %>
           </h2>
-            <p><%= "本文" blog.content %></p>
+            <p>本文></p>
+            <p><%= blog.content %></p>
         </ul>
 
         <div class="blog-links">
