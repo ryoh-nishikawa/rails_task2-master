@@ -19,15 +19,13 @@
           <h2><%= blog.title %></h2>
           <p><%= blog.content %></p>
         </ul>
-      </nav>
 
-      <div class="blog-links">
-        <nav class="col-md-6">
+        <div class="blog-links">
           <%= link_to 'Show', blog %>
           <%= link_to 'Edit', edit_blog_path(blog) %> |
           <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   </div>
 
