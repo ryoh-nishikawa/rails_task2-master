@@ -7,7 +7,7 @@
 <div id="new-blog-link">
   <%= link_to 'TRY !!', new_blog_path %>
 </div>
-<div past_blog>
+<div class=past_blog>
   <p>過去のブログ一覧</p>
 </div>
 
@@ -17,9 +17,9 @@
       <nav class="col-md-6">
         <ul class="blog-panel">
           <div class="blog_title_index">
-            <h3>タイトル</h3>
+            <p>タイトル</p>
           </div>
-          <p class="navbar-text"><%= blog.title %></p>
+           <%= blog.title %>
           <div class="blog_content_index">
             <p>本文</p>
           </div>
