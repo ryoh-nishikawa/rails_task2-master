@@ -1,12 +1,12 @@
 <h1>ブログ画面詳細</h1>
-<p>タイトル</p>
-<p class="navbar-text">
+<div class=title>タイトル</div>
+<div class="blog_title_show">
   <%= @blog.title %>
-</p>
-<p>本文</p>
-<p class="navbar-text">
+</div>
+<div class=content>本文</div>>
+<div class="blog_content_show">
   <%= @blog.content %>
-</p>
+</div>
 
 <%= form_with(model: @blog, url: new_blog_path, local: true, method: 'get') do |form| %>
   <%= form.hidden_field :title %>
