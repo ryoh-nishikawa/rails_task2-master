@@ -12,19 +12,21 @@
 <% @blogs.each do |blog| %>
 
   <div class="container">
-    <div class="blog-panel">
-      <nav class="row"></nav>
-        <ul class="col-md-4">
-          <li><%= blog.title %></li>
-          <li><%= blog.content %></li>
+    <div class="row">
+      <nav class="col-md-4"></nav>
+        <ul class="blog-panel">
+          <h2><%= blog.title %></h2>
+          <p><%= blog.content %></p>
         </ul>
       </nav>
-    </div>
 
-    <div class="blog-links">
-      <%= link_to 'Show', blog %>
-      <%= link_to 'Edit', edit_blog_path(blog) %> |
-      <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <div class="blog-links">
+        <nav class="col-md-4"></nav>
+          <%= link_to 'Show', blog %>
+          <%= link_to 'Edit', edit_blog_path(blog) %> |
+          <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </nav>
+      </div>
     </div>
   </div>
 
