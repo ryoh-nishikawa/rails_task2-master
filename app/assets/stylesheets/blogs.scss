@@ -1,32 +1,15 @@
-h1, h2, h3, h4, h5 {
-}
-
-
-
 body {
-  background-color: #fff; /* ここを変更 */
+  background-color: #fff;
   color: #333;
   font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-size: 25px;
 }
 
-div.alert_msg {
-  margin: auto;
-}
-
-
-
+/*　~index　*/
 div.blog_title_index p {
   text-align: left;
   color: #696969;
   font-size: 25px;
-}
-
-ul.blog_content p{
-  border-style: solid;
-  border-width: 2px;
-  border-color: #d3d3d3;
-  font-size: 30px;
 }
 
 ul.blog_title {
@@ -37,7 +20,14 @@ ul.blog_title {
 div.blog_content_index p {
   text-align: left;
   color: #696969;
-  font-size: 15px;
+  font-size: 25px;
+}
+
+div.blog_content p{
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d3d3d3;
+  font-size: 30px;
 }
 
 ul.blog-panel {
@@ -54,3 +44,63 @@ div.index-msg {
 div.past_blog {
   margin-top: 100px;
 }
+/*　~index　*/
+/*　show~　
+
+
+/*　show~　*/
+/*　_form~　*/
+div.alert_msg {
+  margin: auto;
+}
+/*　~_form　*/
+
+/*　button~　*/
+.square_btn{
+    display: inline-block;
+    position: relative;
+    padding: 0.5em 1.4em;
+    text-decoration: none;
+    background: #ff7f50;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 5px #ff6347;/*ボタン色より暗めに*/
+    border-right: solid 5px #ff4500;/*ボタン色より暗めに*/
+}
+
+.square_btn:before{
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: -1px;
+    width: 0;
+    height: 0;
+    border-width: 0 6px 6px 0px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #FFF;
+}
+
+.square_btn:after{
+    content: " ";
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    width: 0;
+    height: 0;
+    border-width: 0px 6px 6px 0px;
+    border-style: solid;
+    border-color: #FFF;
+    border-bottom-color: transparent;
+}
+
+.square_btn:active{ /*ボタンを押したとき*/
+    border:none;
+    -ms-transform: translate(6px,6px);
+    -webkit-transform: translate(6px,6px);
+    transform: translate(6px,6px);
+}
+
+.square_btn:active:after,.square_btn:active:before {
+    content: none;/*ボタンを押すと線が消える*/
+}
+/*　button~　*/
