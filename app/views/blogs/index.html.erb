@@ -7,8 +7,9 @@
 <div id="new-blog-link">
   <%= link_to 'TRY !!', new_blog_path %>
 </div>
-
-<p>過去のブログ一覧</p>
+<div past_blog>
+  <p>過去のブログ一覧</p>
+</div>
 <% @blogs.each do |blog| %>
 
   <div class="container">
@@ -19,7 +20,9 @@
           <p><%= blog.content %></p>
         </ul>
       </nav>
+    </div>
 
+    <div class="row">
       <div class="blog-links">
         <nav class="col-md-4">
           <%= link_to 'Show', blog %>

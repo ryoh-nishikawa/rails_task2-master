@@ -11,7 +11,7 @@ body {
 }
 
 div.alert_msg {
-  margin-left: 300px;
+  margin: auto;
 }
 
 ul.blog_title {
@@ -36,4 +36,8 @@ ul.blog-panel p{
 div.index-msg {
   text-align: left;
   margin-left: 100px;
+}
+
+div.past_blog {
+  margin-top: 100px;
 }
