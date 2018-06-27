@@ -51,8 +51,10 @@ div.past_blog {
   margin-top: 100px;
 }
 /*　~index　*/
-/*　show~　
-
+/*　show~　*/
+.navbar-text p {
+  width: 600px;
+}
 
 /*　show~　*/
 /*　_form~　*/
@@ -64,47 +66,18 @@ div.alert_msg {
 /*　button~　*/
 .square_btn{
     display: inline-block;
-    position: relative;
-    padding: 0.5em 1.4em;
+    margin-top: 50px;
+    padding: 0.5em 1em;
     text-decoration: none;
     background: #ff7f50;/*ボタン色*/
     color: #FFF;
-    border-bottom: solid 5px #ff6347;/*ボタン色より暗めに*/
-    border-right: solid 5px #ff4500;/*ボタン色より暗めに*/
+    border-bottom: solid 4px #dc143c;
+    border-radius: 3px;
 }
-
-.square_btn:before{
-    content: " ";
-    position: absolute;
-    bottom: -5px;
-    left: -1px;
-    width: 0;
-    height: 0;
-    border-width: 0 6px 6px 0px;
-    border-style: solid;
-    border-color: transparent;
-}
-
-.square_btn:after{
-    content: " ";
-    position: absolute;
-    top: -1px;
-    right: -5px;
-    width: 0;
-    height: 0;
-    border-width: 0px 6px 6px 0px;
-    border-style: solid;
-    border-bottom-color: transparent;
-}
-
-.square_btn:active{ /*ボタンを押したとき*/
-    border:none;
-    -ms-transform: translate(6px,6px);
-    -webkit-transform: translate(6px,6px);
-    transform: translate(6px,6px);
-}
-
-.square_btn:active:after,.square_btn:active:before {
-    content: none;/*ボタンを押すと線が消える*/
+.square_btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
 }
 /*　button~　*/
