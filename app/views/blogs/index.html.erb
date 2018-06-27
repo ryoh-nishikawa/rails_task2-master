@@ -19,19 +19,19 @@
           <div class="blog_title_index">
             <p>タイトル</p>
           </div>
-           <%= blog.title %>
+           <%= blog.title(post.content, length: 10 ) %>
           <div class="blog_content_index">
             <p>本文</p>
           </div>
           <div class="blog_content">
-            <p><%= blog.content %></p>
+            <p><%= blog.content(post.content, length: 30 ) %></p>
           </div>
         </ul>
 
         <div class="blog-links">
-          <%= link_to 'Show', blog %>
-          <%= link_to 'Edit', edit_blog_path(blog) %> |
-          <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to 'Show', blog class:.square_btn %>
+          <%= link_to 'Edit', edit_blog_path(blog) class:.square_btn %>
+          <%= link_to 'Destroy', blog, class:.square_btn, method: :delete, data: { confirm: '本当に消していい?' } %>
         </div>
       </nav>
     <% end %>
