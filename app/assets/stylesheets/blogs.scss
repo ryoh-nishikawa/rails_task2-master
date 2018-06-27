@@ -17,7 +17,16 @@ div.alert_msg {
 ul.blog_title {
   margin-left: 300px;
   font-size: 20px;
+}
 
+ul.blog_panel h3 {
+  text-align: left;
+  color: #d3d3d3;
+}
+
+div.blog_title_index p {
+  text-align: left;
+  color: #d3d3d3;
 }
 
 ul.blog-panel {
@@ -31,7 +40,7 @@ ul.blog-panel {
   padding: 10px;
 }
 
-ul.blog-panel p{
+ul.blog_content p{
   border-style: solid;
   border-width: 2px;
   border-color: #d3d3d3;
