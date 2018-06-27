@@ -16,16 +16,16 @@
     <% @blogs.each do |blog| %>
       <nav class="col-md-6">
         <ul class="blog-panel">
-          <h3>タイトル</h3>
-          <p class="navbar-text">
-            <%= blog.title %>
-          </p>
-            <div class="blog_title_index">
-              <p>本文</p>
-            <div class="blog_title_index">
-            <div class="blog_content">
-              <p><%= blog.content %></p>
-            </div>
+          <div class="blog_title_index">
+            <h3>タイトル</h3>
+          </div>
+          <p class="navbar-text"><%= blog.title %></p>
+          <div class="blog_content_index">
+            <p>本文</p>
+          </div>
+          <div class="blog_content">
+            <p><%= blog.content %></p>
+          </div>
         </ul>
 
         <div class="blog-links">
