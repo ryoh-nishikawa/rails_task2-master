@@ -26,23 +26,23 @@ body {
 }
 
 /*　~index　*/
-div.blog_title_index p,div.blog_content_index p {
+div.blog_title_index, div.blog_content_index {
   text-align: left;
   color: #696969;
   font-size: 25px;
 }
 
-div.blog_title_index2 p {
+div.blog_title_index2 {
   background-color: #ffdab9;
   border: solid 5px #ff7f50;
-  font-size: 27px;
+  font-size: 23px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
 }
 
-div.blog_content_index2 p {
+div.blog_content_index2 {
   border: solid 5px;
   border-color: #d3d3d3;
   font-size: 20px;
