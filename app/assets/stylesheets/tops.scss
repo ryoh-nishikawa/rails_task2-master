@@ -31,12 +31,18 @@ header ul:after {
   clear: both;
 }
 
+#wrap {
+  padding-bottom: 106px;
+}
+
 footer {
   width: 100%;
   background-color:#008080;
   padding: 20px 0 10px 0;
   color: white;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: 106px;
   padding-bottom: 10px;
   position: absolute;
   bottom: 0;
