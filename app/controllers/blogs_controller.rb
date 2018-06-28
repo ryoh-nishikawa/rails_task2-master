@@ -2,7 +2,7 @@ class BlogsController < ApplicationController
   before_action :set_blog,only:[:show,:edit,:update,:destroy]
 
   def index
-    @blogs = Blog.page(params[:page]).per(4)
+    @blogs = Blog.all
   end
 
   def new
