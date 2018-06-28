@@ -7,7 +7,7 @@ form.submit{
     border-bottom: solid 4px #ff4500;
     color: #fff;
     border-radius: 3px;
-    margin:  3% 45% 0% 45%;
+    margin:  5% 45% 0% 45%;
 }
 form.submit:active {/*ボタンを押したとき*/
     -ms-transform: translateY(4px);
@@ -15,7 +15,7 @@ form.submit:active {/*ボタンを押したとき*/
     transform: translateY(4px);/*下に動く*/
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
     border-bottom: none;
-    margin:  3% 45% 0% 45%;
+    margin:  5% 45% 0% 45%;
 }
 /*　button~　*/
 
@@ -66,36 +66,38 @@ div.index-msg {
 div.past_blog {
   margin-top: 100px;
 }
-/*　~index　*/
-/*　show~　*/
+
+/*　表題~　*/
 div.title, div.content {
   text-align: left;
   width: 70%;
   margin: 0% 15% 0% 15%;
   padding: 10px;
 }
-
-div.blog_title_show,div.blog_title_confirm {
+/*　~表題　*/
+/*　タイトル文章~　*/
+div.title_text {
   text-align: left;
   width: 70%;
   margin: 0% 15% 0% 15%;
   padding: 10px;
-  border: solid 5px #ff7f50;
+  border-color: #ff7f50;
   background:#ffdab9;
   word-break: normal;
 }
-
-div.blog_content_show, div.blog_content_confirm {
+/*　~タイトル文章　*/
+/*　本文文章~　*/
+div.content_text {
   text-align: left;
   width: 70%;
   margin: 0% 15% 0% 15%;
   padding: 10px;
-  border: solid 5px #ff7f50;
-  background:#ffdab9;
+  border-color: #d3d3d3;
+  background:#fff;
   word-break: normal;
 }
+/*　~本文文章　*/
 
-/*　show~　*/
 /*　_form~　*/
 
 div.alert_msg {

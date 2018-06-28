@@ -5,11 +5,11 @@
   <%= form.hidden_field :content %>
 
   <div class="title">タイトル</div>
-  <div class="blog_title_confirm">
+  <div class="title_text">
     <p><%= @blog.title %></p>
   </div>
   <div class="content">本文</div>
-  <div class="blog_content_confirm">
+  <div class="content_text">
     <%= @blog.content %></p>
   </div>
   <a class="square_btn">
@@ -20,7 +20,6 @@
 <%= form_with(model: @blog, url: new_blog_path, local: true, method: 'get') do |form| %>
   <%= form.hidden_field :title %>
   <%= form.hidden_field :content %>
-  <a class="square_btn">
-    <%= form.submit "もどる", name: 'back' %>
-  </a>
 <% end %>
+
+<%= link_to "ブログ一覧画面にもどる", blogs_path %>
