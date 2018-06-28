@@ -7,11 +7,10 @@
 <div class="content_text">
   <%= @blog.content %>
 </div>
-
+<br>
 <%= form_with(model: @blog, url: new_blog_path, local: true, method: 'get') do |form| %>
   <%= form.hidden_field :title %>
   <%= form.hidden_field :content %>
-  <a class=square_btn>
-    <%= form.submit "もどる", name: 'back' %>
-  </a>
 <% end %>
+
+<%= link_to "ブログ一覧画面にもどる", blogs_path %>

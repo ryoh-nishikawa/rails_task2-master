@@ -1,4 +1,4 @@
-<h3>以下の内容で送信する。</h3>
+<h2>以下の内容で登録します。</h2>
 
 <%= form_with(model: @blog, url: blogs_path, local: true) do |form| %>
   <%= form.hidden_field :title %>
@@ -12,8 +12,10 @@
   <div class="content_text">
     <%= @blog.content %>
   </div>
+  <br>
   <a class="square_btn">
     <%= form.submit  "登録する" %>
+    <%= form.submit "もどる", name: 'back' %>
   </a>
 <% end %>
 
@@ -21,5 +23,5 @@
   <%= form.hidden_field :title %>
   <%= form.hidden_field :content %>
 <% end %>
-
+<br>
 <%= link_to "ブログ一覧画面にもどる", blogs_path %>
