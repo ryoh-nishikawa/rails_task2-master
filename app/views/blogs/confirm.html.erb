@@ -12,7 +12,6 @@
   <div class="content_text">
     <%= @blog.content %>
   </div>
-  <br>
   <a class="square_btn">
     <%= form.submit  "登録する" %>
     <%= form.submit "もどる", name: 'back' %>
@@ -23,5 +22,4 @@
   <%= form.hidden_field :title %>
   <%= form.hidden_field :content %>
 <% end %>
-<br>
 <%= link_to "ブログ一覧画面にもどる", blogs_path %>
