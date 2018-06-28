@@ -17,14 +17,14 @@
   <div class="title">
     タイトル
   </div>
-    <%= form.text_field :title, rows="1" cols="10" %>
+  <%= form.text_field :title, size: "90" %>
   <div class="content">
     本文
   </div>
-    <%= form.text_area :content, rows="7" cols="10" %>
-    <a class="square_btn">
-      <%= form.submit %>
-    </a>
+  <%= form.text_area :content, size: "90*6000" %>
+  <a class="square_btn">
+    <%= form.submit %>
+  </a>
 <% end %>
 
 <%= link_to "ブログ一覧画面にもどる", blogs_path %>
