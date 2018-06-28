@@ -5,7 +5,6 @@
     padding: 0.5em 1em;
     text-decoration: none;
     background: #ff7f50;/*ボタン色*/
-    color: #FFF;
     border-bottom: solid 4px #dc143c;
     border-radius: 3px;
 }
@@ -19,20 +18,19 @@
 /*　button~　*/
 
 body {
-  background-color: #fff;
   color: #333;
   font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-size: 25px;
 }
 
 /*　~index　*/
-div.blog_title_index p {
+ul.blog-panel p {
   text-align: left;
   color: #696969;
   font-size: 25px;
 }
 
-ul.blog_title_index {
+div.blog_title_index {
   background-color: #ffa07a;
   margin-left: 300px;
   font-size: 30px;
