@@ -1,5 +1,5 @@
 /*　button~　*/
-div.form.submit{
+div.square_btn{
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
@@ -9,7 +9,7 @@ div.form.submit{
     border-radius: 3px;
     margin:  5% 45% 0% 45%;
 }
-div.form.submit:active {/*ボタンを押したとき*/
+div.square_btn:active {/*ボタンを押したとき*/
     -ms-transform: translateY(4px);
     -webkit-transform: translateY(4px);
     transform: translateY(4px);/*下に動く*/
@@ -83,9 +83,8 @@ div.title, div.content {
 /*　本文文章~　*/
 div.text_area {
   text-align: left;
-  width: 1100px;
+  width: auto;
   height: 300px !important;
-  margin: 0% 15% 0% 15%;
   padding: 10px;
 }
 
