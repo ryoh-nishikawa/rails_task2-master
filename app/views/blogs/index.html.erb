@@ -11,6 +11,8 @@
   <p>過去のブログ一覧</p>
 </div>
 
+<%= page_entries_info @shops %>
+
 <div class="container">
   <div class="row">
     <% @blogs.each do |blog| %>
@@ -39,3 +41,5 @@
     <% end %>
   </div>
 </div>
+
+<%= paginate @shops %>
