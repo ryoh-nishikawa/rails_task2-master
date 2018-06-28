@@ -78,8 +78,7 @@ div.title, div.content {
 /*　タイトル文章~　*/
 div.title_text {
   text-align: left;
-  width: 70%;
-  margin: 0% 15% 0% 15%;
+  width: 500px;
   padding: 10px;
   border: solid 5px #ff7f50;
   background:#ffdab9;
@@ -89,7 +88,7 @@ div.title_text {
 /*　本文文章~　*/
 div.content_text {
   text-align: left;
-  width: 70%;
+  width: 800px;
   margin: 0% 15% 0% 15%;
   padding: 10px;
   border: solid 5px #d3d3d3;
