@@ -14,15 +14,11 @@
   <div class="title">
     タイトル
   </div>
-  <div class="title_text">
-    <%= form.text_field :title, class:"titile_text" size: "90" %>
-  </div>
+    <%= form.text_field :title, rows="1" cols="10" %>
   <div class="content">
     本文
   </div>
-  <div class="content_text">
-    <%= form.text_area :content, class:"content_text" size: "90*6000" %>
-  </div>
+    <%= form.text_area :content, rows="7" cols="10" %>
   <div class=square_btn>
     <%= form.submit %>
   </div>

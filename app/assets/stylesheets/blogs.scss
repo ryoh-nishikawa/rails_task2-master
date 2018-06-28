@@ -78,23 +78,23 @@ div.title, div.content {
 /*　タイトル文章~　*/
 div.title_text {
   text-align: left;
-  width: 1000px;
+  width: 1200px;
   margin: auto;
   padding: 10px;
   border: solid 5px #ff7f50;
   background:#ffdab9;
-  word-break: normal;
+  word-break: break-all;
 }
 /*　~タイトル文章　*/
 /*　本文文章~　*/
 div.content_text {
   text-align: left;
-  width: 1000px;
+  width: 1200px;
   margin: auto;
   padding: 10px;
   border: solid 5px #d3d3d3;
   background:#fff;
-  word-break: normal;
+  word-break: break-all;
 }
 /*　~本文文章　*/
 
