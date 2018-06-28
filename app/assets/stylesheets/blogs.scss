@@ -75,7 +75,14 @@ div.title, div.content {
   padding: 10px;
 }
 /*　~表題　*/
-/*　タイトル文章~　*/
+
+/*　本文文章~　*/
+div.text_area {
+  width: 1200px;
+  height: 800px !important;
+}
+/*　~本文文章　*/
+/*　タイトル文章　確認~　*/
 div.title_text {
   text-align: left;
   width: 1200px;
@@ -85,8 +92,8 @@ div.title_text {
   background:#ffdab9;
   word-break: break-all;
 }
-/*　~タイトル文章　*/
-/*　本文文章~　*/
+/*　~タイトル文章　確認*/
+/*　本文文章　確認~　*/
 div.content_text {
   text-align: left;
   width: 1200px;
@@ -96,7 +103,8 @@ div.content_text {
   background:#fff;
   word-break: break-all;
 }
-/*　~本文文章　*/
+/*　~本文文章　確認*/
+
 
 /*　_form~　*/
 
