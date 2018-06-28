@@ -15,16 +15,18 @@
     <%= form.label :title %>
   </div>
   <div class="title_text">
-    <%= form.text_field :title, :size=>"90" %>
+    <%= form.text_field :title, :size=>"80" %>
   </div>
   <div class="content">
     <%= form.label :content %>
   </div>
   <div class="content_text">
-    <%= form.text_area :content, :size=>"120*30" %>
+    <%= form.text_area :content, :size=>"80*300" %>
   </div>
   <div class=square_btn>
     <%= form.submit %>
   </div>
+<% end %>
+
 
 <%= link_to "ブログ一覧画面にもどる", blogs_path %>
