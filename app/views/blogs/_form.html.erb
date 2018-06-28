@@ -18,14 +18,12 @@
     <%= form.label :title %>
   </div>
   <div class="title_text">
-    <%= form.text_field :title, :size=>"75" %>
+    <%= form.text_field :title, class="titile_text" %>
   </div>
   <div class="content">
     <%= form.label :content %>
   </div>
-  <div class="content_text">
-    <%= form.text_area :content, :size=>"75*200" %>
-  </div>
+    <%= form.text_area :content, class="content_text" %>
     <a class="square_btn">
       <%= form.submit %>
     </a>
