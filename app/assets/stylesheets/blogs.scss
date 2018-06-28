@@ -1,3 +1,23 @@
+/*　button~　*/
+.square_btn{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #ff7f50;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #dc143c;
+    border-radius: 3px;
+}
+.square_btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;/*線を消す*/
+}
+/*　button~　*/
+
 body {
   background-color: #fff;
   color: #333;
@@ -12,7 +32,7 @@ div.blog_title_index p {
   font-size: 25px;
 }
 
-ul.blog_title {
+ul.blog_title_index {
   background-color: #ffa07a;
   margin-left: 300px;
   font-size: 30px;
@@ -29,7 +49,7 @@ div.blog_content_index p {
   font-size: 25px;
 }
 
-div.blog_content p{
+div.blog_content_index2 p{
   border-style: solid;
   border-width: 2px;
   border-color: #d3d3d3;
@@ -56,60 +76,45 @@ div.past_blog {
 }
 /*　~index　*/
 /*　show~　*/
-.title {
+div.title {
   text-align: left;
   width: 70%;
   margin: 15%;
   padding: 10px;
 }
 
-.content {
+div.content {
   text-align: left;
   width: 70%;
   margin: 15%;
   padding: 10px;
 }
 
-.blog_title_show {
+div.blog_title_show {
+  text-align: left;
+  width: 70%;
+  margin: 15%;
+  padding: 10px;
+  color: #FFF;
+  border: solid 5px #ff7f50;
+  background:#ffdab9;
+}
+
+div.blog_content_show {
   text-align: left;
   width: 70%;
   margin: 15%;
   padding: 10px;
   border: solid 5px #ff7f50;
   background:#ffdab9;
-}
-
-.blog_content_show {
-  text-align: left;
-  width: 70%;
-  margin: 15%;
-  padding: 10px;
-  border: solid 5px #ff7f50;
-  background:#ffdab9;
-}
 }
 
 /*　show~　*/
 /*　_form~　*/
+
+
+
 div.alert_msg {
   margin: auto;
 }
 /*　~_form　*/
-
-/*　button~　*/
-.square_btn{
-    display: inline-block;
-    margin-top: 50px;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    background: #ff7f50;/*ボタン色*/
-    border-bottom: solid 4px #dc143c;
-    border-radius: 3px;
-}
-.square_btn:active {/*ボタンを押したとき*/
-    -ms-transform: translateY(4px);
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);/*下に動く*/
-    border-bottom: none;/*線を消す*/
-}
-/*　button~　*/
