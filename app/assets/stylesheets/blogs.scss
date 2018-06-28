@@ -1,19 +1,21 @@
 /*　button~　*/
-.square_btn{
+form.submit{
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
     background-color: #ff7f50;/*ボタン色*/
-    color: #FFF;
     border-bottom: solid 4px #ff4500;
+    color: #fff;
     border-radius: 3px;
+    margin:  3% 45% 0% 45%;
 }
-.square_btn:active {/*ボタンを押したとき*/
+form.submit:active {/*ボタンを押したとき*/
     -ms-transform: translateY(4px);
     -webkit-transform: translateY(4px);
     transform: translateY(4px);/*下に動く*/
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
     border-bottom: none;
+    margin:  3% 45% 0% 45%;
 }
 /*　button~　*/
 
@@ -43,7 +45,7 @@ div.blog_title_index2 p {
 div.blog_content_index2 p {
   border: solid 5px;
   border-color: #d3d3d3;
-  font-size: 25px;
+  font-size: 20px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
