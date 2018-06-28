@@ -25,10 +25,10 @@
           <div class="blog_content_index2"><%= blog.content %></div>
         </ul>
 
-        <div class="blog-links">
-          <%= link_to 'Show', blog %>
-          <%= link_to 'Edit', edit_blog_path(blog)  %>
-          <%= link_to 'Destroy', blog, method: :delete, data: { confirm: '本当に消していい?' } %>
+        <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default"><%= link_to 'Show', blog %></button>
+          <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_blog_path(blog) %></button>
+          <button type="button" class="btn btn-default"><%= link_to 'Destroy', blog, method: :delete, data: { confirm: '本当に消していい?' } %></button>
         </div>
       </nav>
     <% end %>
