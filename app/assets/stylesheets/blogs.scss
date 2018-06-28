@@ -78,13 +78,15 @@ div.title, div.content {
 
 /*　本文文章~　*/
 div.text_area {
+  text-align: left;
   width: 1100px;
-  height: 550px !important;
+  height: 300px !important;
   margin: 0% 15% 0% 15%;
   padding: 10px;
 }
 
 div.text_title {
+  text-align: left;
   width: 1100px;
   margin: 0% 15% 0% 15%;
   padding: 10px;
