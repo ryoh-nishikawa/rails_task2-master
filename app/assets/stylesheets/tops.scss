@@ -9,24 +9,32 @@ header {
   position: fixed;
   width: 100%;
   background-color: #008080;
-  text-align: left;
-  height: 200px;
+  height: 150px;
   z-index: 999;
 }
 
 div.row {
-  margin: 0 auto;
-  list-style: none;
+  margin: auto;
   color: white;
-  padding-left: 50px;
 }
 
-div.col-md-3 {
+a {
   display: block;
-  padding: 5px;
   text-decoration: none;
-  color: white;
   font-size: 50px;
+}
+
+div.col-md-6 {
+  text-align: left;
+}
+
+
+h2 {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 50px;
+  border: solid 5px #fff;
 }
 
 header li {
