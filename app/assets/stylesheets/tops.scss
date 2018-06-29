@@ -31,10 +31,6 @@ header ul:after {
   clear: both;
 }
 
-#wrap {
-  padding-bottom: 106px;
-}
-
 footer {
   width: 100%;
   background-color: #008080;
@@ -42,7 +38,6 @@ footer {
   color: white;
   margin-left: auto;
   margin-right: auto;
-  height: 106px;
   padding-bottom: 10px;
   position: absolute;
   bottom: 0;
@@ -59,4 +54,5 @@ html {
 
 body {
   text-align: center;
+  height: auto !important;
 }
