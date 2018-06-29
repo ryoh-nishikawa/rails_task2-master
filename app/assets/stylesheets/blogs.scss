@@ -1,10 +1,13 @@
-
+/*　画像~　*/
 .yama {
   width: 100%;
   height: 300px;
+  margin-top: 99px;
   background-size: cover;
   background-attachment: fixed;
 }
+/*　~画像　*/
+
 /*　button~　*/
 
 div.btn-group {
@@ -73,6 +76,7 @@ ul.blog-panel {
 div.index-msg {
   text-align: left;
   margin-left: 100px;
+  color: #fff;
 }
 
 div.past_blog {
