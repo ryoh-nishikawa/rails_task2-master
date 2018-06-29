@@ -7,26 +7,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-  <header>
-    <ul>
-      <li>
-        <a href="https://lit-gorge-63180.herokuapp.com/blogs">Let's ブログ
-        </a>
-      </li>
-      <li>
-        せっかく旅行にいったんだから！せっかく仕事頑張ったんだから！<br>
-        忘れないうちにブログを書こう、みんなに報告しよう！
-      </li>
-    </ul>
-  </header>
+  <div class="container">
+    <header>
+      <ul>
+        <li>
+          <a href="https://lit-gorge-63180.herokuapp.com/blogs">Let's ブログ
+          </a>
+        </li>
+        <li>
+          せっかく旅行にいったんだから！せっかく仕事頑張ったんだから！<br>
+          忘れないうちにブログを書こう、みんなに報告しよう！
+        </li>
+      </ul>
+    </header>
 
 <%= yield %>
 
-  <footer>
-    <p>運営会社 Let's 株式会社</p>
-    <p>since 2018.3</p>
-  </footer>
-
+    <footer>
+      <p>運営会社 Let's 株式会社</p>
+      <p>since 2018.3</p>
+    </footer>
+  </div>
 </body>
 </html>
