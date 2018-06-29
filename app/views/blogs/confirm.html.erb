@@ -1,5 +1,6 @@
-<h1>以下の内容で登録します。</h1>
-
+<div class="description">
+  <h1>以下の内容で登録します。</h1>
+</div>
 <%= form_with(model: @blog, url: blogs_path, local: true) do |form| %>
   <%= form.hidden_field :title %>
   <%= form.hidden_field :content %>

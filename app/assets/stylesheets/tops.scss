@@ -13,26 +13,32 @@ header {
   z-index: 999;
 }
 
-div.header1 {
+
+
+.header_text1 {
   color: #fff;
   display: block;
   text-decoration: none;
   font-size: 50px;
-  margin: 25% 0 25% 0;
+  height: 150px;
+  margin: 40px 0 40px 0;
 }
 
-div.header2 {
+.header_text2 {
+  color: #fff;
   text-align: left;
-  margin: 25% 0 25% 0;
+  height: 150px;
+  margin: 40px 0 40px 0;
 }
 
-div.header3 {
+.header_text3 {
   display: block;
   padding: 10px;
   text-decoration: none;
   font-size: 50px;
   border: solid 5px #fff;
-  margin: 25% 0 25% 0;
+  height: 150px;
+  margin: 40px 0 40px 0;
 }
 
 header :after {
