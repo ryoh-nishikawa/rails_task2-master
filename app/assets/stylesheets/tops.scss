@@ -1,6 +1,7 @@
 div.container {
   height: auto !important;
   position: relative;
+  padding: 0px;
   width: 100%;
 }
 
@@ -45,9 +46,9 @@ footer {
   color: white;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 10px;
   position: absolute;
   bottom: 0;
+  height: 100px;
 }
 
 footer p {
