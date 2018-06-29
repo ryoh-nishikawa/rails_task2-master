@@ -10,13 +10,27 @@
   <div class="container">
     <header>
       <ul>
+        <div class="row">
+          <div class="col-md-8">.col-md-8</div>
+          <div class="col-md-4">.col-md-4</div>
+        </div>
         <li>
-          <a href="https://lit-gorge-63180.herokuapp.com/blogs">Let's ブログ
-          </a>
+          <div class="col-md-3">.col-md-8</div>
+            <a href="https://lit-gorge-63180.herokuapp.com/blogs">Let's ブログ</a>
+          </div>
         </li>
         <li>
-          せっかく旅行にいったんだから！せっかく仕事頑張ったんだから！<br>
-          忘れないうちにブログを書こう、みんなに報告しよう！
+          <div class="col-md-5">.col-md-8</div>
+            せっかく旅行にいったんだから！せっかく仕事頑張ったんだから！<br>
+            忘れないうちにブログを書こう、みんなに報告しよう！
+         </div>
+        </li>
+        <li>
+          <div class="col-md-4">.col-md-8</div>
+            <p>" TRY !! "をクリックするだけ🎶</p>
+            <h1>新規ブログを作成する</h1>>
+            <h1><%= link_to 'TRY !!', new_blog_path %></h1>
+          </div>
         </li>
       </ul>
     </header>
