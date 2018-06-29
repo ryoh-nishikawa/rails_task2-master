@@ -1,8 +1,9 @@
 /*　画像~　*/
-.yama {
+div.yama {
   width: 100%;
   height: 300px;
   margin-top: 150px;
+  position: fixed;
   background-size: cover;
   background-attachment: fixed;
   object-fit: cover;
@@ -34,6 +35,9 @@ div.square_btn:active {/*ボタンを押したとき*/
   margin:  5% 45% 0% 45%;
 }
 /*　button~　*/
+h1 {
+  margin-top: 150px;
+}
 
 body {
   color: #333;
@@ -74,7 +78,7 @@ ul.blog-panel {
   padding: 10px;
 }
 
-div.index-msg {
+div.yama p, div.yama h1 {
   text-align: left;
   font-size: 30px;
   margin: 50px 100px 0 0;

@@ -13,23 +13,20 @@ header {
   z-index: 999;
 }
 
-div.row {
-  margin: auto;
-  color: white;
-}
-
-a {
+div.header1 {
+  color: #fff;
   display: block;
   text-decoration: none;
   font-size: 50px;
-}
+  margin: auto;
 
-div.col-md-6 {
+div.header2 {
   text-align: left;
+  margin: auto;
 }
 
 
-h2 {
+div.header3 {
   display: block;
   padding: 10px;
   text-decoration: none;
