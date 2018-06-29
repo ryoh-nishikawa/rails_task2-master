@@ -1,5 +1,5 @@
 /*　画像~　*/
-div.yama {
+.bbq {
   width: 100%;
   height: 300px;
   margin-top: 150px;
@@ -14,7 +14,6 @@ div.yama {
 
 div.btn-group {
   background-color: #ff7f50;
-  color: #fff;
 }
 
 div.square_btn{
@@ -78,24 +77,15 @@ ul.blog-panel {
   padding: 10px;
 }
 
-div.yama p, div.yama h1 {
-  text-align: left;
-  font-size: 30px;
+div.try_index {
+  position: absolute;
+  color: white;/*文字は白に*/
+  font-weight: bold; /*太字に*/
+  font-size: 2em;/*サイズ2倍*/
+  font-family:Quicksand, sans-serif;/*Google Font*/
+  top: 0;
+  left: 0;
   margin: 50px 100px 0 0;
-  color: #fff;
-  text-shadow: 1px 1px 0 #000,
-             -1px 1px 0 #000,
-             1px -1px 0 #000,
-             -1px -1px 0 #000;
-}
-
-div.new-blog-link {
-  color: #fff;
-  font-size: 30px;
-  text-shadow: 1px 1px 0 #000,
-               -1px 1px 0 #000,
-               1px -1px 0 #000,
-               -1px -1px 0 #000;
 }
 
 div.past_blog {

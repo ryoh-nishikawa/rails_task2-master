@@ -18,13 +18,13 @@ div.header1 {
   display: block;
   text-decoration: none;
   font-size: 50px;
-  margin: auto;
+  margin: 25% 0 25% 0;
+}
 
 div.header2 {
   text-align: left;
-  margin: auto;
+  margin: 25% 0 25% 0;
 }
-
 
 div.header3 {
   display: block;
@@ -32,14 +32,10 @@ div.header3 {
   text-decoration: none;
   font-size: 50px;
   border: solid 5px #fff;
+  margin: 25% 0 25% 0;
 }
 
-header li {
-  float: left;
-  margin-top: 25px;
-}
-
-header ul:after {
+header :after {
   content: "";
   display: block;
   clear: both;
