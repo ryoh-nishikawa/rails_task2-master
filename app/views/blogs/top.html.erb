@@ -1,9 +1,26 @@
-<img src="/images/bbq.png" class="bbq" />
-<div class="try_index">
-  <p>" TRY !! "をクリックするだけ🎶</p>
-  <a><%= link_to '新規ブログを作成しよう 　TRY !!', new_blog_path %></a>
+<div class="past_blog">
+  過去のブログ一覧
 </div>
 
-<div class="blog_list">
-  <%= link_to "ブログ一覧画面にもどる", blogs_path %>
+<div class="container">
+  <div class="past_blog_list">
+    <div class="row">
+      <% @blogs.each do |blog| %>
+        <nav class="col-md-4">
+          <ul class="blog-panel">
+            <div class="blog_title_index">タイトル</div>
+            <div class="blog_title_index2"><%= blog.title %></div>
+            <div class="blog_content_index">本文</div>
+            <div class="blog_content_index2"><%= blog.content %></div>
+          </ul>
+
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default"><%= link_to 'Show', blog %></button>
+            <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_blog_path(blog) %></button>
+            <button type="button" class="btn btn-default"><%= link_to 'Destroy', blog, method: :delete, data: { confirm: '本当に消していい?' } %></button>
+          </div>
+        </nav>
+      <% end %>
+    </div>
+  </div>
 </div>
