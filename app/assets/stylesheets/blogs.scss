@@ -40,11 +40,9 @@ img.bbq {
   width: 100%;
   height: 400px;
   margin-top: 150px;
-  position: fixed;
   background-size: cover;
   background-attachment: fixed;
   object-fit: cover;
-  float:
 }
 /*　~画像　*/
 
@@ -54,8 +52,6 @@ div.try_index {
   font-weight: bold; /*太字に*/
   font-size: 2em;/*サイズ2倍*/
   font-family: Quicksand, sans-serif;/*Google Font*/
-  top: 0;
-  left: 0;
   margin: 200px 100px 0 0;
   text-align: center;
 }
@@ -149,6 +145,9 @@ div.content_text {
 }
 /*　~本文文章　確認*/
 
+div.blog_list {
+  margin: 10px 0 10px 0;
+}
 
 /*　_form~　*/
 
