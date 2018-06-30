@@ -1,7 +1,7 @@
 div.container {
   height: auto !important;
   position: relative;
-  padding: 0 0 100px 0;
+  padding: 0 0 200px 0;
   width: 100%;
   background-color: #fffaf0;
 }
@@ -48,8 +48,13 @@ footer {
   margin-left: auto;
   margin-right: auto;
   bottom: 0;
-  height: 100px;
+  height: 200px;
 }
+
+div.blog_list a {
+  color: #fff;
+}
+
 
 footer p {
   font-size: 20px;
