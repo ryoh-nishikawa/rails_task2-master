@@ -48,7 +48,6 @@ body {
 
 div.try_index {
     position: absolute;
-    left: 100px;
     top: 30px;
     color: #fff;
     background: rgba(0,0,0,.6);
@@ -61,6 +60,7 @@ div.try_index p, div.try_index a {
     padding: 0 0.8em;
     font-size: 40px;
     text-align: left;
+    color: #fff;
     font-family: Quicksand, sans-serif;
 }
 
