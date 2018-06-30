@@ -13,10 +13,10 @@
   <div class="content_text">
     <%= @blog.content %>
   </div>
-  <a class="square_btn">
+  <div class="square_btn">
     <%= form.submit "登録する" %>
     <%= form.submit "もどる", name: 'back' %>
-  </a>
+  </div>
 <% end %>
 
 <%= form_with(model: @blog, url: new_blog_path, local: true, method: 'get') do |form| %>
