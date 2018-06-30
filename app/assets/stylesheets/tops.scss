@@ -10,33 +10,19 @@ header {
   width: 100%;
   background-color: #008080;
   height: 150px;
+  padding: auto;
   z-index: 999;
+  color: #fff;
 }
 
 
 
 div.header_text1 {
-  color: #fff;
-  display: block;
   text-decoration: none;
-  font-size: 50px;
-  height: 150px;
-  margin: 40px 0 40px 0;
 }
 
 div.header_text2 {
-  color: #fff;
   text-align: left;
-  height: 150px;
-  margin: 40px 0 40px 0;
-}
-
-div.header_text3 {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 50px;
-  border: solid 5px #fff;
   height: 150px;
   margin: 40px 0 40px 0;
 }
