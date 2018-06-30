@@ -4,10 +4,6 @@ class BlogsController < ApplicationController
   def index
   end
 
-  def top
-    @blog = Blog.all
-  end
-
   def new
     if params[:back]
       @blog = Blog.new(blog_params)
