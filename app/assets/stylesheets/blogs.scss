@@ -56,7 +56,7 @@ div.try_index {
     margin-top: 200px;
 }
 
-div.try_index p {
+div.try_index1 {
     margin: 0;
     padding: 0 0.8em;
     font-size: 40px;
@@ -64,7 +64,15 @@ div.try_index p {
     color: #fff;
 }
 
-div.try_index a {
+div.try_index2 {
+    margin: 0;
+    padding: 0 0.8em;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+div.try_index3 a {
     margin: 0;
     padding: 0 0.8em;
     font-size: 40px;
@@ -78,7 +86,7 @@ div.past_blog {
 }
 
 div.past_blog_list {
-  margin: 0 100px 0 100px;
+  margin: 0 200px 0 200px;
 }
 
 div.blog_title_index, div.blog_content_index {
