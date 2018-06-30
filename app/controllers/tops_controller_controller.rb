@@ -1,5 +1,5 @@
 class TopsControllerController < ApplicationController
   def index
-    @blogs = top_blog_path,
+    @blogs = Blog.all
   end
 end
