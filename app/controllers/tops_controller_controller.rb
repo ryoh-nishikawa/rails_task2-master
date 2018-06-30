@@ -1,5 +1,6 @@
 class TopsControllerController < ApplicationController
+  def index
+  end
   def top
-    @blog = Blog.all
   end
 end
