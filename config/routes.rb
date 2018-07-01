@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'blogs#index'
-  get '/blogs/tops/top', to: 'blogs/tops#top',as: 'blogs_tops_top'
+  root to: 'blogs/tops#top'
+  get '/blogs/index', to: 'blogs#index'
 
   resources:blogs do
     collection do
@@ -8,6 +8,6 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :users, only: [:new]
+  resources :users, only: [:new, :create]
 
 end
