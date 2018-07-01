@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root to: 'blogs#index'
-  get 'blogs/tops/top' to: 'blogs/tops#top'
+  get '/blogs/tops/top' to: 'blogs/tops#top'
 
   resources:blogs do
     collection do
