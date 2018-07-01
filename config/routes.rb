@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'blogs/tops#top'
+  root to: 'tops#top'
   get '/blogs/index', to: 'blogs#index'
 
   resources:blogs do

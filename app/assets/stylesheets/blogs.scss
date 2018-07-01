@@ -13,7 +13,7 @@ div.square_btn{
   background-color: #ff7f50;/*ボタン色*/
   border-bottom: solid 4px #ff4500;
   border-radius: 3px;
-  margin:  5% 45% 0% 45%;
+  margin:  5% 45% 5% 45%;
 }
 div.square_btn:active {/*ボタンを押したとき*/
   -ms-transform: translateY(4px);
@@ -21,7 +21,7 @@ div.square_btn:active {/*ボタンを押したとき*/
   transform: translateY(4px);/*下に動く*/
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
   border-bottom: none;
-  margin:  5% 45% 0% 45%;
+  margin:  5% 45% 5% 45%;
 }
 /*　button~　*/
 h1 {
@@ -72,13 +72,9 @@ div.try_index a {
     color: #fff;
 }
 
-div.past_blog {
-  margin-top: 50px;
-  font-size: 35px;
-}
-
 div.past_blog_list {
   margin: 0 200px 0 200px;
+  max-height: none;
 }
 
 div.blog_title_index, div.blog_content_index {
@@ -158,7 +154,7 @@ div.title_text {
 div.content_text {
   text-align: left;
   width: 1200px;
-  margin: 0% 15% 0% 15%;
+  margin: 0% 15% 15% 15%;
   padding: 10px;
   border: solid 5px #d3d3d3;
   background:#fff;
