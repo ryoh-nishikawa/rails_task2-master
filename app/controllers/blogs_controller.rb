@@ -1,6 +1,8 @@
 class BlogsController < ApplicationController
   before_action :set_blog,only:[:show,:edit,:update,:destroy]
   before_action :current_user,only:[:show,:edit,:update,:destroy]
+  before_action :login_check, only: [:new, :edit, :update, :destroy]
+
 
   def index
     @blog = Blog.all
@@ -66,8 +68,10 @@ class BlogsController < ApplicationController
     @blog = Blog.find(params[:id])
   end
 
-  unless @current_user
-    flash[:referer] = request.fullpath
-    redirect_to "/login"
+  def login_check
+    unless user_signed_in?
+      flash[:alert] = "ログインしてください"
+      redirect_to root_path
+    end
   end
 end
