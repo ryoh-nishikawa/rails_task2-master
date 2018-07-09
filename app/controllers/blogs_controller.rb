@@ -53,6 +53,10 @@ class BlogsController < ApplicationController
     render :new if @blog.invalid?
   end
 
+  def current_user
+    @current_user ||= User.find_by(id: session[:user_id])
+  end
+
   private
   def blog_params
     params.require(:blog).permit(:title,:content)
@@ -62,8 +66,8 @@ class BlogsController < ApplicationController
     @blog = Blog.find(params[:id])
   end
 
-  def current_user
-    @current_user ||= User.find_by(id: session[:user_id])
+  unless @current_user
+    flash[:referer] = request.fullpath
+    redirect_to "/login"
   end
-
 end
