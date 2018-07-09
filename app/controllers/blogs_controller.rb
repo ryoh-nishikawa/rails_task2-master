@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
   before_action :set_blog,only:[:show,:edit,:update,:destroy]
+  before_action :current_user,only:[:show,:edit,:update,:destroy]
 
   def index
     @blog = Blog.all
@@ -47,6 +48,10 @@ class BlogsController < ApplicationController
   def confirm
     @blog = Blog.new(blog_params)
     render :new if @blog.invalid?
+  end
+
+  def current_user
+    @current_user ||= User.find_by(id: session[:user_id])
   end
 
   private
