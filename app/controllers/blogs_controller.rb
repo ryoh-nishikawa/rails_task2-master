@@ -21,10 +21,13 @@ class BlogsController < ApplicationController
     else
       render 'new'
     end
+    @blog = Blog.new(blogs_params)
+    @blog.user_id = current_user.id
   end
 
   def show
     @blog = Blog.find(params[:id])
+    @favorite = current_user.favorites.find_by(blog_id: @blog.id)
   end
 
   def edit
@@ -50,10 +53,6 @@ class BlogsController < ApplicationController
     render :new if @blog.invalid?
   end
 
-  def current_user
-    @current_user ||= User.find_by(id: session[:user_id])
-  end
-
   private
   def blog_params
     params.require(:blog).permit(:title,:content)
@@ -62,4 +61,9 @@ class BlogsController < ApplicationController
   def set_blog
     @blog = Blog.find(params[:id])
   end
+
+  def current_user
+    @current_user ||= User.find_by(id: session[:user_id])
+  end
+
 end
